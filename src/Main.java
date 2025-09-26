@@ -1,5 +1,8 @@
 import FactoryMethod.Shape;
 import FactoryMethod.ShapeFactory;
+import ObserverPattern.AnotherUserClass;
+import ObserverPattern.NewsAgency;
+import ObserverPattern.User;
 import Singleton.Logger;
 
 import java.io.File;
@@ -32,5 +35,20 @@ public class Main {
         shapeA.draw();
         shapeB.draw();
         shapeC.draw();
+
+        // Observer Pattern
+        NewsAgency newsAgency = new NewsAgency();
+
+        User userA = new User("A");
+        User userB = new User("B");
+        AnotherUserClass anotherUserC = new AnotherUserClass("C");
+        AnotherUserClass anotherUserD = new AnotherUserClass("D");
+
+        newsAgency.addObserver(userA);
+        newsAgency.addObserver(userB);
+        newsAgency.addObserver(anotherUserC);
+        newsAgency.addObserver(anotherUserD);
+
+        newsAgency.publishNews("Yo and Gurt are back to being friends!");
     }
 }

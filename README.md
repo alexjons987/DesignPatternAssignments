@@ -22,10 +22,10 @@
 ### 3. **Observer Pattern**
 **Assignment:** Simulate a news feed where multiple users subscribe to updates.
 **Instructions:**
-- [ ] Create an interface `Observer` with the method `update(String news)`.
-- [ ] Create a class `NewsAgency` that can manage a list of `Observer` objects and notify them.
-- [ ] Implement several classes that represent users and implement `Observer`.
-- [ ] Simulate the news agency sending news to the users.
+- [x] Create an interface `Observer` with the method `update(String news)`.
+- [x] Create a class `NewsAgency` that can manage a list of `Observer` objects and notify them.
+- [x] Implement several classes that represent users and implement `Observer`.
+- [x] Simulate the news agency sending news to the users.
 
 ---
 
