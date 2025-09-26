@@ -1,4 +1,4 @@
-### 1. **Singleton Pattern**
+### 1. [**Singleton Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/Singleton)
 **Assignment:** Implement a simple `Logger`-class that only has a single instance.
 **Instructions:**
 - [x] Create a new class `Logger` with a private constructor.
@@ -9,13 +9,13 @@
 
 ---
 
-### 2. **Factory Method Pattern**
+### 2. [**Factory Method Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/FactoryMethod)
 **Assignment:** Implement a factory to create different types of geometric shapes (`Shape`).
 **Instructions:**
-- [ ] Create an interface `Shape` with the `draw()` method.
-- [ ] Implement the `Circle`, `Square`, and `Rectangle` classes that `implements Shape`.
-- [ ] Create a `ShapeFactory` class with a `createShape(String type)` method.
-- [ ] Call the factory and draw different shapes in the main method.
+- [x] Create an interface `Shape` with the `draw()` method.
+- [x] Implement the `Circle`, `Square`, and `Rectangle` classes that `implements Shape`.
+- [x] Create a `ShapeFactory` class with a `createShape(String type)` method.
+- [x] Call the factory and draw different shapes in the main method.
 
 ---
 
