@@ -1,4 +1,4 @@
-package ObserverPattern;
+package observer.pattern;
 
 public class AnotherUserClass implements Observer {
     private final String username;

@@ -1,9 +1,9 @@
-import FactoryMethod.Shape;
-import FactoryMethod.ShapeFactory;
-import ObserverPattern.AnotherUserClass;
-import ObserverPattern.NewsAgency;
-import ObserverPattern.User;
-import Singleton.Logger;
+import factory.method.Shape;
+import factory.method.ShapeFactory;
+import observer.pattern.AnotherUserClass;
+import observer.pattern.NewsAgency;
+import observer.pattern.User;
+import singleton.Logger;
 
 import java.io.File;
 

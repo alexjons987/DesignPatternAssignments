@@ -1,4 +1,4 @@
-### 1. [**Singleton Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/Singleton)
+### 1. [**Singleton Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/singleton)
 **Assignment:** Implement a simple `Logger`-class that only has a single instance.
 **Instructions:**
 - [x] Create a new class `Logger` with a private constructor.
@@ -9,7 +9,7 @@
 
 ---
 
-### 2. [**Factory Method Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/FactoryMethod)
+### 2. [**Factory Method Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/factory/method)
 **Assignment:** Implement a factory to create different types of geometric shapes (`Shape`).
 **Instructions:**
 - [x] Create an interface `Shape` with the `draw()` method.
@@ -19,7 +19,7 @@
 
 ---
 
-### 3. **Observer Pattern**
+### 3. [**Observer Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/observer/pattern)
 **Assignment:** Simulate a news feed where multiple users subscribe to updates.
 **Instructions:**
 - [x] Create an interface `Observer` with the method `update(String news)`.
@@ -29,7 +29,7 @@
 
 ---
 
-### 4. **Strategy Pattern**
+### 4. [**Strategy Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/strategy/pattern)
 **Assignment:** Implement a system to calculate different types of discounts.
 **Instructions:**
 - [ ] Create an interface `DiscountStrategy` with the method `double applyDiscount(double price)`.
@@ -39,7 +39,7 @@
 
 ---
 
-### 5. **Decorator Pattern**
+### 5. [**Decorator Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/decorator/pattern)
 **Assignment:** Build a simple coffee ordering app with different options.
 **Instructions:**
 - [ ] Create an interface `Coffee` with the `double getCost()` and `String getDescription()` methods.
