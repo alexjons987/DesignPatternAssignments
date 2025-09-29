@@ -42,7 +42,7 @@
 ### 5. [**Decorator Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/decorator/pattern)
 **Assignment:** Build a simple coffee ordering app with different options.
 **Instructions:**
-- [ ] Create an interface `Coffee` with the `double getCost()` and `String getDescription()` methods.
-- [ ] Implement a base class `SimpleCoffee` that implements `Coffee`.
-- [ ] Create decorator classes like `Milk`, `Sugar`, and `WhippedCream` that add cost and description.
-- [ ] Build a coffee order with multiple options and calculate the final price.
+- [x] Create an interface `Coffee` with the `double getCost()` and `String getDescription()` methods.
+- [x] Implement a base class `SimpleCoffee` that implements `Coffee`.
+- [x] Create decorator classes like `Milk`, `Sugar`, and `WhippedCream` that add cost and description.
+- [x] Build a coffee order with multiple options and calculate the final price.

@@ -1,3 +1,4 @@
+import decorator.pattern.*;
 import factory.method.Shape;
 import factory.method.ShapeFactory;
 import observer.pattern.AnotherUserClass;
@@ -60,6 +61,7 @@ public class Main {
 
         logger.log("Creating new Cart instance (default: no discount)...");
         Cart cart = new Cart();
+
         cart.calculateDiscount(priceOfGenericItem);
 
         cart.setDiscountStrategy(new FixedAmountDiscount());
@@ -67,5 +69,22 @@ public class Main {
 
         cart.setDiscountStrategy(new PercentageDiscount());
         cart.calculateDiscount(priceOfGenericItem);
+
+        // Decorator Pattern
+        logger.log("Creating new Coffee using SimpleCoffee...");
+        Coffee coffee = new SimpleCoffee();
+        logger.log(String.format("Cost: %.2f SEK | Description: %s", coffee.getCost(), coffee.getDescription()));
+
+        logger.log("Adding coffee creamer...");
+        coffee = new CreamAddition(coffee);
+        logger.log(String.format("Cost: %.2f SEK | Description: %s", coffee.getCost(), coffee.getDescription()));
+
+        logger.log("Adding sugar...");
+        coffee = new SugarAddition(coffee);
+        logger.log(String.format("Cost: %.2f SEK | Description: %s", coffee.getCost(), coffee.getDescription()));
+
+        logger.log("Adding milk...");
+        coffee = new MilkAddition(coffee);
+        logger.log(String.format("Cost: %.2f SEK | Description: %s", coffee.getCost(), coffee.getDescription()));
     }
 }
