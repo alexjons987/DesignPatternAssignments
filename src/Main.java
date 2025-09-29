@@ -4,6 +4,10 @@ import observer.pattern.AnotherUserClass;
 import observer.pattern.NewsAgency;
 import observer.pattern.User;
 import singleton.Logger;
+import strategy.pattern.Cart;
+import strategy.pattern.FixedAmountDiscount;
+import strategy.pattern.NoDiscount;
+import strategy.pattern.PercentageDiscount;
 
 import java.io.File;
 
@@ -50,5 +54,13 @@ public class Main {
         newsAgency.addObserver(anotherUserD);
 
         newsAgency.publishNews("Yo and Gurt are back to being friends!");
+
+        // Strategy Pattern
+        double priceOfGenericItem = 367.0d;
+
+        Cart cart = new Cart();
+        cart.calculateDiscount(new FixedAmountDiscount(), priceOfGenericItem);
+        cart.calculateDiscount(new NoDiscount(), priceOfGenericItem);
+        cart.calculateDiscount(new PercentageDiscount(), priceOfGenericItem);
     }
 }

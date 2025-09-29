@@ -32,10 +32,10 @@
 ### 4. [**Strategy Pattern**](https://github.com/alexjons987/DesignPatternAssignments/tree/master/src/strategy/pattern)
 **Assignment:** Implement a system to calculate different types of discounts.
 **Instructions:**
-- [ ] Create an interface `DiscountStrategy` with the method `double applyDiscount(double price)`.
-- [ ] Implement the classes `PercentageDiscount`, `FixedAmountDiscount`, and `NoDiscount`.
-- [ ] Create a class `Cart` that uses a `DiscountStrategy` to calculate the discount.
-- [ ] Test different discounts by changing the strategy.
+- [x] Create an interface `DiscountStrategy` with the method `double applyDiscount(double price)`.
+- [x] Implement the classes `PercentageDiscount`, `FixedAmountDiscount`, and `NoDiscount`.
+- [x] Create a class `Cart` that uses a `DiscountStrategy` to calculate the discount.
+- [x] Test different discounts by changing the strategy.
 
 ---
 
