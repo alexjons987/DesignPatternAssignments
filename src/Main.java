@@ -58,9 +58,14 @@ public class Main {
         // Strategy Pattern
         double priceOfGenericItem = 367.0d;
 
+        logger.log("Creating new Cart instance (default: no discount)...");
         Cart cart = new Cart();
-        cart.calculateDiscount(new FixedAmountDiscount(), priceOfGenericItem);
-        cart.calculateDiscount(new NoDiscount(), priceOfGenericItem);
-        cart.calculateDiscount(new PercentageDiscount(), priceOfGenericItem);
+        cart.calculateDiscount(priceOfGenericItem);
+
+        cart.setDiscountStrategy(new FixedAmountDiscount());
+        cart.calculateDiscount(priceOfGenericItem);
+
+        cart.setDiscountStrategy(new PercentageDiscount());
+        cart.calculateDiscount(priceOfGenericItem);
     }
 }
