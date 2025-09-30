@@ -1,14 +1,22 @@
-import decorator.pattern.*;
+import singleton.Logger;
+
 import factory.method.Shape;
 import factory.method.ShapeFactory;
+
 import observer.pattern.AnotherUserClass;
 import observer.pattern.NewsAgency;
 import observer.pattern.User;
-import singleton.Logger;
+
 import strategy.pattern.Cart;
 import strategy.pattern.FixedAmountDiscount;
 import strategy.pattern.NoDiscount;
 import strategy.pattern.PercentageDiscount;
+
+import decorator.pattern.Coffee;
+import decorator.pattern.CreamAddition;
+import decorator.pattern.MilkAddition;
+import decorator.pattern.SimpleCoffee;
+import decorator.pattern.SugarAddition;
 
 import java.io.File;
 
